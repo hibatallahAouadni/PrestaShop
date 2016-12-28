@@ -1,0 +1,41 @@
+
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(ºâ‚‰ùÿÿÿÿ
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(î™”Êüÿÿÿÿ
+?javascript:S1442" Remove this usage of alert(...).(œõûºúÿÿÿÿ
+?javascript:S1442" Remove this usage of alert(...).(ëöñ¼øÿÿÿÿ
+?javascript:S1442" Remove this usage of alert(...).(ëöñ¼øÿÿÿÿ
+:javascript:S1442" Remove this usage of alert(...).(­÷Û£
+djavascript:S2814"ERename "ids" as this name is already used in declaration at line 455.(’Àƒšùÿÿÿÿ
+djavascript:S2814"JRename "firstCut" as this name is already used in declaration at line 454.(ŒğÎ
+pjavascript:FunctionComplexity"DFunction has a complexity of 14 which is greater than 10 authorized.(ıÆ¤Èùÿÿÿÿ
+kjavascript:FunctionComplexity"DFunction has a complexity of 26 which is greater than 10 authorized.(ÎÄÔ
+kjavascript:FunctionComplexity"DFunction has a complexity of 17 which is greater than 10 authorized.(˜äûæ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(×àÉú
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(×àÉú
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.( Š¤ø
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Á„¨ä
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ü¦€Îşÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ßŞõãıÿÿÿÿ
+l(javascript:VariableDeclarationAfterUsage"5Move the declaration of "ajaxCart" before this usage.(­‚§ùÿÿÿÿÿ
+Hjavascript:S1125")Remove the literal "false" boolean value.(öÀ–‹ıÿÿÿÿ
+Ajavascript:S1125"(Remove the literal "true" boolean value.(–„íZ
+ljavascript:UnusedVariable"DRemove the declaration of the unused 'removedProductDomId' variable.(”Ú¥ÿÿÿÿÿ
+fjavascript:UnusedVariable"CRemove the declaration of the unused 'productAttributeId' variable.(¿Ìä—
+fjavascript:UnusedVariable"CRemove the declaration of the unused 'removedProductData' variable.(”¿£ç
+_javascript:S1854"ERemove this useless assignment to local variable "removedProductData"(”¿£ç
+ejavascript:S1854"FRemove this useless assignment to local variable "removedProductDomId"(”Ú¥ÿÿÿÿÿ
+_javascript:S1854"ERemove this useless assignment to local variable "productAttributeId"(¿Ìä—
+cjavascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(§›€±şÿÿÿÿ
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(‹°ë«
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(êè×
+vjavascript:S2703"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(¸âÀıÿÿÿÿ
+}javascript:S2703"^Add the "let", "const" or "var" keyword to this declaration of "aProduct" to make it explicit.(„õå™şÿÿÿÿ
+ujavascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "error" to make it explicit.(¨¹¡ğ
+Šjavascript:S2703"pAdd the "let", "const" or "var" keyword to this declaration of "customizationFormatedDatas" to make it explicit.(™Äı–
+javascript:S2703"eAdd the "let", "const" or "var" keyword to this declaration of "customizationId" to make it explicit.(–›¦§
+‡javascript:S2703"hAdd the "let", "const" or "var" keyword to this declaration of "hasDeliveryAddress" to make it explicit.(ıˆşéÿÿÿÿÿ
+]!javascript:UnusedFunctionArgument"2Remove the unused function parameter "textStatus".(¨êÚ
+X!javascript:UnusedFunctionArgument"-Remove the unused function parameter "jqXHR".(¨êÚ
+T!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".( ¼Ş„
+sjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(±ñ­Y
+yjavascript:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ïªŸÀşÿÿÿÿ

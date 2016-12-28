@@ -1,0 +1,29 @@
+
+V
+&themes/default-bootstrap/js/product.js,3/d/3d7078fb5cf9a7529cf84abf8ae2cf720c94012e
+9
+	index.php,b/b/bb6499b8e938f92a3695fff1afe57edea4b9efb7
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+B
+admin-dev/ajax.php,8/f/8f397e4b3d24d70bcc06a8c7d219b662e977d3cb
+G
+admin-dev/functions.php,9/6/96842a839ad49b236b5b6fd447279d615f548379
+C
+classes/Product.php,4/d/4db83459d2a9f4924cf7eee0ec032bf24e87f4d4
+j
+:themes/default-bootstrap/js/modules/blockcart/ajax-cart.js,7/a/7ab5e234b154daa47464855fbd874ae2f603823e
+O
+modules/blockcart/blockcart.tpl,2/0/20bb56a2c625dded62c45a327935db46da3c4d22
+b
+2themes/default-bootstrap/order-payment-classic.tpl,c/6/c66c51d82b8ed182c0c4c7dff00dfac445bcc2a0
+h
+8themes/default-bootstrap/modules/blockcart/blockcart.tpl,6/6/6671d3348d3e62daeeb5a365ace3d09c26f8bf0e
+Z
+*themes/default-bootstrap/shopping-cart.tpl,3/d/3d4c4a0548d017d48538328fdcd54ab3ecc26b38
+c
+3themes/default-bootstrap/shopping-cart-advanced.tpl,a/6/a6352e6ea876ac6b14b6888bf6a3e6061f6481ec
+c
+3themes/default-bootstrap/order-payment-advanced.tpl,0/0/0092aaedf2f99908d610029448610d86d09a939f
+N
+modules/blockcart/ajax-cart.js,c/3/c3d09e62ffc3fbdd8b2d8590a18d259517f50abd

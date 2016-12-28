@@ -1,0 +1,240 @@
+
+w	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$result".(¦ÊÈ™ùÿÿÿÿ
+p	php:S1192"XDefine a constant instead of duplicating this literal "cache_default_attribute" 7 times.(»ŒÈ±ùÿÿÿÿ
+b	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(›èé®
+b	php:S1142"OReduce the number of returns of this function 6, down to the maximum allowed 3.(êŠˆï
+Ÿ	php:S1192"†Define a constant instead of duplicating this literal "attribute` a ON a.`id_attribute` = pac.`id_attribute`
+				LEFT JOIN `" 3 times.(ÅãÿÄúÿÿÿÿ
+f	php:S1192"NDefine a constant instead of duplicating this literal "DELETE FROM `" 6 times.(ŒÁ®¨øÿÿÿÿ
+G	php:S1066"/Merge this if statement with the enclosing one.(®ãİ¸úÿÿÿÿ
+d	php:S1192"QDefine a constant instead of duplicating this literal "stock_availables" 3 times.(Ô€‚ÿ
+a	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(ı²9
+d	php:S1192"QDefine a constant instead of duplicating this literal ")
+			LEFT JOIN `" 3 times.(Âöÿæ
+f	php:S1192"NDefine a constant instead of duplicating this literal "updateProduct" 3 times.(‹Ë‡ıÿÿÿÿ
+G	php:S1135"4Complete the task associated to this "TODO" comment.(±Öº¸
+g	php:S1192"ODefine a constant instead of duplicating this literal "xlink_resource" 8 times.(½ˆö³ùÿÿÿÿ
+i	php:S1192"QDefine a constant instead of duplicating this literal "product_supplier" 3 times.(µÍˆÔøÿÿÿÿ
+Z	php:S1192"GDefine a constant instead of duplicating this literal "custom" 4 times.(èÔœŠ
+e	php:S1192"RDefine a constant instead of duplicating this literal "
+			INSERT INTO `" 3 times.(¢Î¼ş
+^php:S107"GThis function has 8 parameters, which is greater than the 7 authorized.(İıïÅüÿÿÿÿ
+v	php:S1541"^The Cyclomatic Complexity of this function "delete" is 32 which is greater than 20 authorized.(ÜË¦øÿÿÿÿ
+_php:S107"HThis function has 16 parameters, which is greater than the 7 authorized.(Ü¦¨æùÿÿÿÿ
+g	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(µıß¬ıÿÿÿÿ
+€	php:S1541"hThe Cyclomatic Complexity of this function "priceCalculation" is 60 which is greater than 20 authorized.(˜ÊŠ¸üÿÿÿÿ
+`	php:S1192"MDefine a constant instead of duplicating this literal "customizable" 4 times.(¸’Ä 
+^	php:S1192"FDefine a constant instead of duplicating this literal "front" 5 times.( …å­ùÿÿÿÿ
+g	php:S1192"TDefine a constant instead of duplicating this literal "PS_TAX_ADDRESS_TYPE" 6 times.(œ¯ğß
+g	php:S1192"TDefine a constant instead of duplicating this literal "
+					INSERT INTO `" 3 times.(ïŠöÁ
+Xphp:S107"GThis function has 9 parameters, which is greater than the 7 authorized.(½²®t
+r	php:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(¸äüşüÿÿÿÿ
+^	php:S1192"KDefine a constant instead of duplicating this literal "id_feature" 6 times.(ï¤ İ
+m	php:S1192"UDefine a constant instead of duplicating this literal "
+		SELECT *
+		FROM `" 3 times.(ªÆÍ»ÿÿÿÿÿ
+n	php:S1067"[Reduce the number of conditional operators (17) used in the expression (maximum allowed 3).(¹ãää
+`	php:S1192"NDefine a constant instead of duplicating this literal "id_attribute" 17 times.(ºÈÓ#
+n	php:S1192"VDefine a constant instead of duplicating this literal "id_product_attribute" 42 times.(Ç¤ò¸ûÿÿÿÿ
+k	php:S1192"SDefine a constant instead of duplicating this literal "product_attribute" 31 times.(ŠÓ€Öşÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "Combination" 5 times.(ÀàŞ“üÿÿÿÿ
+g	php:S1142"OReduce the number of returns of this function 7, down to the maximum allowed 3.(™ÙÏ°ùÿÿÿÿ
+_	php:S1192"GDefine a constant instead of duplicating this literal "
+					" 3 times.(ŠÓ€Öşÿÿÿÿ
+|	php:S1192"dDefine a constant instead of duplicating this literal "category_product` cp
+			LEFT JOIN `" 3 times.(¥û×Ûüÿÿÿÿ
+`	php:S1192"HDefine a constant instead of duplicating this literal "virtual" 3 times.(Õòó¨ıÿÿÿÿ
+_	php:S1192"GDefine a constant instead of duplicating this literal "getter" 6 times.(™äÍûÿÿÿÿ
+\	php:S1192"IDefine a constant instead of duplicating this literal "resource" 9 times.(ø³šÊ
+j	php:S1192"WDefine a constant instead of duplicating this literal "id_customization_field" 8 times.(¢®„º
+€	php:S1448"hClass "ProductCore" has 208 methods, which is greater than 20 authorized. Split it into smaller classes.(€—Ûßûÿÿÿÿ
+]	php:S1192"JDefine a constant instead of duplicating this literal "quantity" 16 times.(”ÍèÆ
+[	php:S1192"IDefine a constant instead of duplicating this literal "products" 5 times.(Ù˜A
+Z	php:S1192"GDefine a constant instead of duplicating this literal "labels" 3 times.(±‡ú¬
+d	php:S1192"QDefine a constant instead of duplicating this literal "`id_category` = " 3 times.(­£Á 
+e	php:S1192"MDefine a constant instead of duplicating this literal "manufacturer" 3 times.(äÅÁûÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "Y-m-d H:i:s" 9 times.(©‹Üúÿÿÿÿ
+_php:S107"HThis function has 20 parameters, which is greater than the 7 authorized.(˜ÊŠ¸üÿÿÿÿ
+d	php:S1192"QDefine a constant instead of duplicating this literal "category_product" 7 times.(ü¯›¡
+g	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(ßÌ‰ôûÿÿÿÿ
+s	php:S1192"[Define a constant instead of duplicating this literal "product_attribute` pa
+				" 5 times.(öÿÉûÿÿÿÿ
+^	php:S1192"FDefine a constant instead of duplicating this literal "
+				" 5 times.(ŠÓ€Öşÿÿÿÿ
+c	php:S1192"KDefine a constant instead of duplicating this literal "default_on" 6 times.(¾—°şÿÿÿÿ
+c	php:S1192"PDefine a constant instead of duplicating this literal "isUnsignedFloat" 4 times.(Şº¼–
+^	php:S1192"KDefine a constant instead of duplicating this literal "0000-00-00" 5 times.(µÕ¨–
+w	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$result".(¼×®±úÿÿÿÿ
+c	php:S1192"KDefine a constant instead of duplicating this literal "is_virtual" 4 times.(ö“§Åøÿÿÿÿ
+Y	php:S1192"FDefine a constant instead of duplicating this literal "field" 3 times.(Âª“
+~	php:S1541"fThe Cyclomatic Complexity of this function "getNewProducts" is 32 which is greater than 20 authorized.(±õï”ûÿÿÿÿ
+_php:S107"HThis function has 13 parameters, which is greater than the 7 authorized.(ÒÈÜ¼úÿÿÿÿ
+b	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(Êÿ²‹
+j	php:S1192"RDefine a constant instead of duplicating this literal "description_short" 3 times.(½ØŞğıÿÿÿÿ
+a	php:S1192"NDefine a constant instead of duplicating this literal "isGenericName" 5 times.(í¿ßà
+q	php:S1192"_Define a constant instead of duplicating this literal "PS_VIRTUAL_PROD_FEATURE_ACTIVE" 4 times.(¯†‹
+r	php:S1192"`Define a constant instead of duplicating this literal "category_product` cp
+				JOIN `" 4 times.(ıõ]
+]	php:S1192"JDefine a constant instead of duplicating this literal "validate" 51 times.(çµ¤Ï
+b	php:S1192"JDefine a constant instead of duplicating this literal "required" 13 times.(ûì©Ğøÿÿÿÿ
+m	php:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(°Àç²
+@	php:S1125"(Remove the literal "true" boolean value.(ŒäğËüÿÿÿÿ
+µ	php:S1192"¡Define a constant instead of duplicating this literal "product_attribute_combination` pac
+				ON (a.`id_attribute` = pac.`id_attribute`)
+			LEFT JOIN `" 3 times.(´ÙÂ
+b	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(¸ºá¶
+n	php:S1192"VDefine a constant instead of duplicating this literal "cache_has_attachments" 4 times.(Ğ£ïÎùÿÿÿÿ
+^	php:S1192"KDefine a constant instead of duplicating this literal "categories" 3 times.(ü¯›¡
+·	php:S1192"£Define a constant instead of duplicating this literal "product_attribute_combination` pac
+					ON (a.`id_attribute` = pac.`id_attribute`)
+				LEFT JOIN `" 3 times.(´ÙÂ
+_	php:S1192"GDefine a constant instead of duplicating this literal "price" 32 times.(ûì©Ğøÿÿÿÿ
+a	php:S1192"IDefine a constant instead of duplicating this literal "id_image" 7 times.(Ûßûÿÿÿÿ
+r	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$return".(ÇûË½
+b	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(ûš¿
+°	php:S1192"œDefine a constant instead of duplicating this literal "product_attribute` pa
+					ON (pac.`id_product_attribute` = pa.`id_product_attribute`)
+				" 3 times.(¯áö
+_	php:S1192"GDefine a constant instead of duplicating this literal "active" 3 times.(˜ šÿşÿÿÿÿ
+t	php:S1488"\Immediately return this expression instead of assigning it to the temporary variable "$sql".(ŠÀªúÿÿÿÿ
+\	php:S1192"IDefine a constant instead of duplicating this literal "date_add" 6 times.(¼‡
+w	php:S1541"eThe Cyclomatic Complexity of this function "getPricesDrop" is 39 which is greater than 20 authorized.(½²®t
+b	php:S1192"JDefine a constant instead of duplicating this literal "reduction" 3 times.(‡—Êäøÿÿÿÿ
+r	php:S1192"ZDefine a constant instead of duplicating this literal "product_attribute` pa
+			" 9 times.(öÿÉûÿÿÿÿ
+f	php:S1192"SDefine a constant instead of duplicating this literal ")
+				LEFT JOIN `" 13 times.(‚–ôÒ
+g	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(ª†ïáøÿÿÿÿ
+G	php:S1066"/Merge this if statement with the enclosing one.(®ãİ¸úÿÿÿÿ
+g	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(ŠÄš—ùÿÿÿÿ
+b	php:S1192"JDefine a constant instead of duplicating this literal "accessory" 4 times.(åè„¨ùÿÿÿÿ
+†	php:S1192"nDefine a constant instead of duplicating this literal "customization_field`
+			WHERE `id_product` = " 4 times.(‰¼Ûèıÿÿÿÿ
+`	php:S1192"MDefine a constant instead of duplicating this literal "id_product_2" 3 times.(ëìî˜
+}php:S115"fRename this constant "_CUSTOMIZE_FILE_" to match the regular expression ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$.(¸•÷¬øÿÿÿÿ
+	php:S1192"vDefine a constant instead of duplicating this literal " AND product_shop.`visibility` IN ("both", "catalog")" 5 times.(œ’ôôÿÿÿÿÿ
+[	php:S1192"HDefine a constant instead of duplicating this literal "id_shop" 3 times.(ŞşıÌ
+n	php:S1192"\Define a constant instead of duplicating this literal " AND EXISTS(SELECT 1 FROM `" 3 times.(ıõ]
+`	php:S1192"HDefine a constant instead of duplicating this literal "isBool" 11 times.(óÔõ³úÿÿÿÿ
+<	php:S1125")Remove the literal "false" boolean value.(ËíôÉ
+u	php:S1192"]Define a constant instead of duplicating this literal "PS_ADVANCED_STOCK_MANAGEMENT" 6 times.(Ø¼µàûÿÿÿÿ
+o	php:S1192"\Define a constant instead of duplicating this literal "attribute` a
+			LEFT JOIN `" 4 times.(æ…–à
+d	php:S1192"LDefine a constant instead of duplicating this literal "modulefront" 5 times.( …å­ùÿÿÿÿ
+X	php:S1192"FDefine a constant instead of duplicating this literal "stock" 3 times.(¾İS
+r	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$result".(îÅÎ”
+†	php:S1192"nDefine a constant instead of duplicating this literal ")
+				WHERE cp.`id_product` = p.`id_product`)" 4 times.(Õá¼üúÿÿÿÿ
+	php:S1541"lThe Cyclomatic Complexity of this function "getProductProperties" is 34 which is greater than 20 authorized.(¨ÇÕÖ
+Z	php:S1192"GDefine a constant instead of duplicating this literal "object" 3 times.(Âª“
+l	php:S1192"TDefine a constant instead of duplicating this literal "id_address_delivery" 5 times.(åíàôùÿÿÿÿ
+Zphp:S107"HThis function has 15 parameters, which is greater than the 7 authorized.(àŞÈõ
+u	php:S1192"]Define a constant instead of duplicating this literal "
+			WHERE pa.`id_product` = " 7 times.(ŠÓ€Öşÿÿÿÿ
+i	php:S1192"QDefine a constant instead of duplicating this literal "attribute_ecotax" 4 times.(ë„È¾ûÿÿÿÿ
+`	php:S1192"MDefine a constant instead of duplicating this literal "isUnsignedId" 6 times.(çµ¤Ï
+®	php:S1192"šDefine a constant instead of duplicating this literal "product_attribute` pa
+				ON (pac.`id_product_attribute` = pa.`id_product_attribute`)
+			" 3 times.(¯áö
+`	php:S1192"MDefine a constant instead of duplicating this literal "resourceName" 3 times.(ëºÛÄ
+j	php:S1192"WDefine a constant instead of duplicating this literal "product_attribute_shop" 5 times.(ò£äˆ
+]	php:S1192"JDefine a constant instead of duplicating this literal "position" 12 times.(¸‚µ£
+e	php:S1192"MDefine a constant instead of duplicating this literal "blocklayered" 4 times.(¶‹õ¢üÿÿÿÿ
+`	php:S1192"MDefine a constant instead of duplicating this literal "product_lang" 4 times.(úÅñê
+r	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$result".(‚ˆÎÁ
+b	php:S1192"JDefine a constant instead of duplicating this literal "attribute" 5 times.(ÈÃõ®üÿÿÿÿ
+d	php:S1192"QDefine a constant instead of duplicating this literal "
+				LEFT JOIN `" 6 times.(ùÎĞ°
+A	php:S1125")Remove the literal "false" boolean value.(ŒäğËüÿÿÿÿ
+f	php:S1192"NDefine a constant instead of duplicating this literal "price_tax_exc" 3 times.(›üı¨ùÿÿÿÿ
+f	php:S1192"NDefine a constant instead of duplicating this literal "INSERT INTO `" 5 times.(éèµşÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "id_product" 84 times.(ñ‚¸Òıÿÿÿÿ
+Y	php:S1192"FDefine a constant instead of duplicating this literal "Y-m-d" 7 times.(æí 
+_php:S107"HThis function has 13 parameters, which is greater than the 7 authorized.(Û½Ô›ıÿÿÿÿ
+A	php:S1125")Remove the literal "false" boolean value.(Æ÷óËÿÿÿÿÿ
+c	php:S1192"KDefine a constant instead of duplicating this literal "id_country" 8 times.(Ä¸¹²øÿÿÿÿ
+b	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(Ì€¹Ñ
+f	php:S1192"NDefine a constant instead of duplicating this literal "cache_is_pack" 7 times.(Åäöıÿÿÿÿ
+‚php:S115"kRename this constant "_CUSTOMIZE_TEXTFIELD_" to match the regular expression ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$.(õ˜å¸ÿÿÿÿÿ
+k	php:S1788"XMove arguments "$id_supplier", "$location", "$upc" after arguments without default value(àŞÈõ
+L	php:S1135"4Complete the task associated to this "TODO" comment.(÷õŞÿÿÿÿÿ
+a	php:S1192"IDefine a constant instead of duplicating this literal "DELETE `" 4 times.(û“†¯şÿÿÿÿ
+\	php:S1192"IDefine a constant instead of duplicating this literal "category" 7 times.(ø³šÊ
+]	php:S1192"JDefine a constant instead of duplicating this literal "
+			AND `" 4 times.(úÿåº
+—php:S138"„This function "getProductProperties" has 152 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(¨ÇÕÖ
+Z	php:S1192"GDefine a constant instead of duplicating this literal "intval" 6 times.(€œÂš
+_	php:S1192"LDefine a constant instead of duplicating this literal "isReference" 3 times.(Ş…Œ»
+<	php:S1125")Remove the literal "false" boolean value.(¸Îë¯
+[	php:S1192"HDefine a constant instead of duplicating this literal "isPrice" 4 times.(›ÖÒ®
+p	php:S1192"]Define a constant instead of duplicating this literal "attribute` a
+				LEFT JOIN `" 3 times.(æ…–à
+l	php:S1192"TDefine a constant instead of duplicating this literal "id_category_default" 5 times.(İŠÏêùÿÿÿÿ
+Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+a	php:S1192"IDefine a constant instead of duplicating this literal "date_upd" 4 times.(Øáõùÿÿÿÿ
+_	php:S1192"GDefine a constant instead of duplicating this literal "setter" 7 times.(˜Œ’ƒşÿÿÿÿ
+[	php:S1192"IDefine a constant instead of duplicating this literal "product" 43 times.(ˆÂq
+e	php:S1192"RDefine a constant instead of duplicating this literal "a.`id_product` = " 3 times.(á³Í
+v	php:S1192"^Define a constant instead of duplicating this literal "product_attribute_combination" 4 times.(â–È÷ıÿÿÿÿ
+G	php:S1066"/Merge this if statement with the enclosing one.(µ™ÊŞúÿÿÿÿ
+x	php:S1541"fThe Cyclomatic Complexity of this function "getPriceStatic" is 29 which is greater than 20 authorized.(£ßã)
+¦	php:S1192"Define a constant instead of duplicating this literal "image_lang` il ON (image_shop.`id_image` = il.`id_image` AND il.`id_lang` = " 3 times.(ö’Ş¨úÿÿÿÿ
+F	php:S1481".Remove this unused "$position" local variable.(Á ¡öıÿÿÿÿ
+]	php:S1192"JDefine a constant instead of duplicating this literal "reference" 4 times.(Ş…Œ»
+®	php:S1192"•Define a constant instead of duplicating this literal "attribute_lang` al
+					ON (a.`id_attribute` = al.`id_attribute` AND al.`id_lang` = " 3 times.(¡ÈŸõøÿÿÿÿ
+Ã	php:S1192"ªDefine a constant instead of duplicating this literal "attribute_group_lang` agl
+					ON (a.`id_attribute_group` = agl.`id_attribute_group` AND agl.`id_lang` = " 3 times.(úõİùÿÿÿÿ
+p	php:S1192"XDefine a constant instead of duplicating this literal "PS_NB_DAYS_NEW_PRODUCT" 14 times.(ÊÛôŒúÿÿÿÿ
+±	php:S1192"˜Define a constant instead of duplicating this literal "attribute_group` ag ON ag.`id_attribute_group` = a.`id_attribute_group`
+				LEFT JOIN `" 3 times.(ª¾Í¨ÿÿÿÿÿ
+[	php:S1788"CMove arguments "$id_supplier" after arguments without default value(ÒÈÜ¼úÿÿÿÿ
+£	php:S1192"ŠDefine a constant instead of duplicating this literal "category_group` cg ON (cp.id_category = cg.id_category AND cg.`id_group` " 4 times.(Õá¼üúÿÿÿÿ
+_	php:S1192"GDefine a constant instead of duplicating this literal "weight" 5 times.(¾Ù½µÿÿÿÿÿ
+Zphp:S107"HThis function has 16 parameters, which is greater than the 7 authorized.(¤´Ÿ
+^	php:S1192"FDefine a constant instead of duplicating this literal "value" 4 times.(ÈêÚüÿÿÿÿ
+`	php:S1192"HDefine a constant instead of duplicating this literal "fields" 16 times.(Î‹ƒøÿÿÿÿ
+i	php:S1192"QDefine a constant instead of duplicating this literal "id_customization" 4 times.(åíàôùÿÿÿÿ
+c	php:S1192"PDefine a constant instead of duplicating this literal "wholesale_price" 3 times.(ÏÍäˆ
+¿	php:S1192"¦Define a constant instead of duplicating this literal "attribute_group_lang` agl ON (ag.`id_attribute_group` = agl.`id_attribute_group` AND agl.`id_lang` = " 3 times.(å‚†×øÿÿÿÿ
+Z	php:S1192"GDefine a constant instead of duplicating this literal "ecotax" 7 times.(›ÖÒ®
+v	php:S1192"^Define a constant instead of duplicating this literal "
+				WHERE pa.`id_product` = " 5 times.(ŠÓ€Öşÿÿÿÿ
+\	php:S1192"IDefine a constant instead of duplicating this literal "UPDATE `" 6 times.(Ö†íİ
+e	php:S1192"RDefine a constant instead of duplicating this literal "quantity_returned" 3 times.(ú²É…
+`	php:S1192"MDefine a constant instead of duplicating this literal "id_category" 12 times.(ü¯›¡
+G	php:S1135"4Complete the task associated to this "TODO" comment.(±Öº¸
+w	php:S1488"_Immediately return this expression instead of assigning it to the temporary variable "$result".(¼×®±úÿÿÿÿ
+y	php:S1192"fDefine a constant instead of duplicating this literal "
+			ORDER BY `id_customization_field`" 3 times.(Äåµ¶
+Yphp:S107"HThis function has 17 parameters, which is greater than the 7 authorized.(£ßã)
+^	php:S1192"FDefine a constant instead of duplicating this literal "image" 4 times.(…Äšøÿÿÿÿ
+b	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(‰èŒ¦
+h	php:S1192"PDefine a constant instead of duplicating this literal "attribute_price" 7 times.(™½ˆÜÿÿÿÿÿ
+b	php:S1192"ODefine a constant instead of duplicating this literal "product` p
+			" 3 times.(ã“Ñ÷
+a	php:S1192"NDefine a constant instead of duplicating this literal "isUnsignedInt" 5 times.(²«éÊ
+G	php:S1066"/Merge this if statement with the enclosing one.(ºÃÃ€ıÿÿÿÿ
+[	php:S1192"IDefine a constant instead of duplicating this literal "price_wt" 3 times.(ØÒçv
+^	php:S1192"FDefine a constant instead of duplicating this literal "color" 3 times.(Óø¾Ïùÿÿÿÿ
+j	php:S1192"RDefine a constant instead of duplicating this literal "quantity_refunded" 3 times.(…•€§ıÿÿÿÿ
+˜php:S138"€This function "priceCalculation" has 202 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(˜ÊŠ¸üÿÿÿÿ
+Z	php:S1192"HDefine a constant instead of duplicating this literal "id_lang" 7 times.(¨Ïv
+b	php:S1192"ODefine a constant instead of duplicating this literal "id_product = " 11 times.(™µ‘Î
+qphp:S134"_Refactor this code to not nest more than 4 "if", "for", "while", "switch" and "try" statements.(ÌÕÀì
+b	php:S1192"JDefine a constant instead of duplicating this literal "_quantity" 3 times.(¾”ıÿÿÿÿ
+g	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(˜ÊŠ¸üÿÿÿÿ
+m	php:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(°Àç²
+g	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(ÜË¦øÿÿÿÿ
+i	php:S1192"VDefine a constant instead of duplicating this literal " AND cfl.`id_shop` = " 3 times.(œšØÜ
+e	php:S1192"MDefine a constant instead of duplicating this literal "product_shop" 5 times.(şï“òşÿÿÿÿ
+e	php:S1192"RDefine a constant instead of duplicating this literal "id_feature_value" 11 times.(ˆáµö
+rphp:S104"fFile "Product.php" has 6148 lines, which is greater than 1000 authorized. Split it into smaller files.
+b	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(üí€…
+^	php:S1192"KDefine a constant instead of duplicating this literal "product` p" 3 times.(Ö†íİ
+¤	php:S1192"Define a constant instead of duplicating this literal "attribute_lang` al ON (a.`id_attribute` = al.`id_attribute` AND al.`id_lang` = " 4 times.(ó³À
+Y	php:S1192"FDefine a constant instead of duplicating this literal "ean13" 4 times.(×„õ«
+w	php:S1192"_Define a constant instead of duplicating this literal "", product_shop.`date_upd` = "" 4 times.(©‹Üúÿÿÿÿ
+h	php:S1192"PDefine a constant instead of duplicating this literal "
+			LEFT JOIN `" 7 times.(­ÇÚúüÿÿÿÿ

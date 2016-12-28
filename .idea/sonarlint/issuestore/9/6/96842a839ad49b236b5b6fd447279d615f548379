@@ -1,0 +1,34 @@
+
+L	php:S1135"4Complete the task associated to this "TODO" comment.(Ö­”Şûÿÿÿÿ
+G	php:S1135"4Complete the task associated to this "TODO" comment.(êÃ€
+L	php:S1135"4Complete the task associated to this "TODO" comment.(·ŸŞ¥ıÿÿÿÿ
+J	php:S1172"2Remove the unused function parameter "$base_urls".(½âïËúÿÿÿÿ
+F	php:S1172".Remove the unused function parameter "$theme".(½âïËúÿÿÿÿ
+Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+r	php:S1541"_The Cyclomatic Complexity of this function "getPath" is 24 which is greater than 20 authorized.(úşŸã
+{	php:S1541"cThe Cyclomatic Complexity of this function "runAdminTab" is 51 which is greater than 20 authorized.(ÌÃ×¹üÿÿÿÿ
+b	php:S1142"OReduce the number of returns of this function 4, down to the maximum allowed 3.(úşŸã
+b	php:S1142"OReduce the number of returns of this function 5, down to the maximum allowed 3.(åó¬­
+{php:S115"dRename this constant "_PS_ADMIN_DIR_" to match the regular expression ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$.(§³âçùÿÿÿÿ
+j	php:S1192"RDefine a constant instead of duplicating this literal "&id_cms_category=" 3 times.(””¡»şÿÿÿÿ
+^	php:S1192"FDefine a constant instead of duplicating this literal "index" 4 times.(ÚÉú®ÿÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "id_category" 6 times.(¶ˆ¥ûúÿÿÿÿ
+g	php:S1192"ODefine a constant instead of duplicating this literal "_MYSQL_ENGINE_" 3 times.(ÎŞ…Şÿÿÿÿÿ
+`	php:S1192"HDefine a constant instead of duplicating this literal "&token=" 6 times.(íâ¡ıøÿÿÿÿ
+_	php:S1192"LDefine a constant instead of duplicating this literal "_DB_PASSWD_" 3 times.(¢ëÉÒ
+b	php:S1192"JDefine a constant instead of duplicating this literal "_DB_NAME_" 3 times.(²¶¼Øùÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "_DB_PREFIX_" 3 times.(öÕ¾Åşÿÿÿÿ
+_	php:S1192"GDefine a constant instead of duplicating this literal "id_tab" 3 times.(†’âüÿÿÿÿ
+h	php:S1192"PDefine a constant instead of duplicating this literal "AdminCmsContent" 6 times.(””¡»şÿÿÿÿ
+b	php:S1192"JDefine a constant instead of duplicating this literal "_DB_USER_" 3 times.(†Åì¨ùÿÿÿÿ
+b	php:S1192"JDefine a constant instead of duplicating this literal "<a href="" 4 times.(ƒåÙÿÿÿÿÿ
+m	php:S1192"UDefine a constant instead of duplicating this literal "&viewcategory&token=" 3 times.(×ğ÷¶ûÿÿÿÿ
+h	php:S1192"PDefine a constant instead of duplicating this literal "AdminCategories" 3 times.(Ë­ô¿ûÿÿÿÿ
+d	php:S1192"LDefine a constant instead of duplicating this literal "_DB_SERVER_" 3 times.(ñå¿²ÿÿÿÿÿ
+6php:S125"Remove this commented out code.(é½˜ıüÿÿÿÿ
+6php:S125"Remove this commented out code.(‚šˆ€ÿÿÿÿÿ
+K	php:S1481"3Remove this unused "$tab_lowercase" local variable.(Ë²òÿÿÿÿÿ
+F	php:S1481".Remove this unused "$iso_user" local variable.(Ô’×¶üÿÿÿÿ
+’php:S138"{This function "runAdminTab" has 155 lines, which is greater than the 150 lines authorized. Split it into smaller functions.(ÌÃ×¹üÿÿÿÿ
+vphp:S134"_Refactor this code to not nest more than 4 "if", "for", "while", "switch" and "try" statements.(—÷ø¡ûÿÿÿÿ
+vphp:S134"_Refactor this code to not nest more than 4 "if", "for", "while", "switch" and "try" statements.(—÷ø¡ûÿÿÿÿ

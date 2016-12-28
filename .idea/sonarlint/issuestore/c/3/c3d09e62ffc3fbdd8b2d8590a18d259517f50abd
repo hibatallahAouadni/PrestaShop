@@ -1,0 +1,39 @@
+
+^javascript:S2583"DChange this condition so that it does not always evaluate to "true".(Çê¬®
+]javascript:S2583"DChange this condition so that it does not always evaluate to "true".(šãÀr
+cjavascript:S2583"DChange this condition so that it does not always evaluate to "true".(î™”Êüÿÿÿÿ
+9javascript:S1442" Remove this usage of alert(...).(çˆR
+?javascript:S1442" Remove this usage of alert(...).(œõûºúÿÿÿÿ
+:javascript:S1442" Remove this usage of alert(...).(ê†©½
+?javascript:S1442" Remove this usage of alert(...).(Û´Óôùÿÿÿÿ
+:javascript:S1442" Remove this usage of alert(...).(­÷Û£
+9javascript:S1442" Remove this usage of alert(...).(çˆR
+djavascript:S2814"ERename "ids" as this name is already used in declaration at line 309.(’Àƒšùÿÿÿÿ
+djavascript:S2814"JRename "firstCut" as this name is already used in declaration at line 308.(ŒğÎ
+kjavascript:FunctionComplexity"DFunction has a complexity of 25 which is greater than 10 authorized.(ÎÄÔ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(óÎ¬Í
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Á„¨ä
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ü¦€Îşÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ßŞõãıÿÿÿÿ
+fjavascript:UnusedVariable"CRemove the declaration of the unused 'productAttributeId' variable.(¿Ìä—
+fjavascript:UnusedVariable">Remove the declaration of the unused 'pictureOffset' variable.(”…¤úÿÿÿÿ
+fjavascript:UnusedVariable"CRemove the declaration of the unused 'removedProductData' variable.(”¿£ç
+ljavascript:UnusedVariable"DRemove the declaration of the unused 'removedProductDomId' variable.(”Ú¥ÿÿÿÿÿ
+_javascript:S1854"@Remove this useless assignment to local variable "pictureOffset"(”…¤úÿÿÿÿ
+_javascript:S1854"ERemove this useless assignment to local variable "removedProductData"(”¿£ç
+ejavascript:S1854"FRemove this useless assignment to local variable "removedProductDomId"(”Ú¥ÿÿÿÿÿ
+_javascript:S1854"ERemove this useless assignment to local variable "productAttributeId"(¿Ìä—
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(‹°ë«
+^javascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(êè×
+cjavascript:OneStatementPerLine"6Reformat the code to have only one statement per line.(§›€±şÿÿÿÿ
+ujavascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "error" to make it explicit.(¨¹¡ğ
+}javascript:S2703"^Add the "let", "const" or "var" keyword to this declaration of "aProduct" to make it explicit.(„õå™şÿÿÿÿ
+javascript:S2703"eAdd the "let", "const" or "var" keyword to this declaration of "customizationId" to make it explicit.(–›¦§
+Šjavascript:S2703"pAdd the "let", "const" or "var" keyword to this declaration of "customizationFormatedDatas" to make it explicit.(™Äı–
+xjavascript:S2703"YAdd the "let", "const" or "var" keyword to this declaration of "ids" to make it explicit.(¶ğ‘€úÿÿÿÿ
+vjavascript:S2703"]Add the "let", "const" or "var" keyword to this declaration of "baseUri" to make it explicit.(”åÀV
+vjavascript:S2703"WAdd the "let", "const" or "var" keyword to this declaration of "i" to make it explicit.(¸âÀıÿÿÿÿ
+^!javascript:UnusedFunctionArgument"3Remove the unused function parameter "errorThrown".(±˜˜Ù
+]!javascript:UnusedFunctionArgument"2Remove the unused function parameter "textStatus".(¨êÚ
+X!javascript:UnusedFunctionArgument"-Remove the unused function parameter "jqXHR".(¨êÚ
+^!javascript:UnusedFunctionArgument"3Remove the unused function parameter "errorThrown".(±˜˜Ù

@@ -1,0 +1,91 @@
+
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(ÎİÆôÿÿÿÿÿ
+Y!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(ÜûÜ“úÿÿÿÿ
+]"javascript:CollapsibleIfStatements",Merge this if statement with the nested one.(ˆ·¸âıÿÿÿÿ
+Y!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(â¥’°úÿÿÿÿ
+ljavascript:UnusedVariable"DRemove the declaration of the unused 'productPriceDisplay' variable.(ÊØ„Šùÿÿÿÿ
+6javascript:S2870"Remove this use of "delete".(Ÿ÷âí
+‡javascript:S2703"hAdd the "let", "const" or "var" keyword to this declaration of "quantityAvailableT" to make it explicit.(ÁÎ”´üÿÿÿÿ
+]"javascript:CollapsibleIfStatements",Merge this if statement with the nested one.(Ñ®ÖÍÿÿÿÿÿ
+~javascript:S2703"_Add the "let", "const" or "var" keyword to this declaration of "tabValues" to make it explicit.(šÿïéûÿÿÿÿ
+ƒjavascript:S2703"iAdd the "let", "const" or "var" keyword to this declaration of "customizationFields" to make it explicit.(Íö÷
+Šjavascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(‚“öÿÿÿÿÿ
+njavascript:S1854"TRemove this useless assignment to local variable "priceWithGroupReductionWithoutTax"(â‰¯¼
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¤Î¢ğıÿÿÿÿ
+Sjavascript:ForIn"9Restrict what this loop acts on by testing each property.(œù°
+zjavascript:S2703"[Add the "let", "const" or "var" keyword to this declaration of "count" to make it explicit.(¢™Œ½üÿÿÿÿ
+mjavascript:S2814"NRename "discountUpTo" as this name is already used in declaration at line 930.(ÙÔ©©üÿÿÿÿ
+pjavascript:FunctionComplexity"DFunction has a complexity of 21 which is greater than 10 authorized.(ÃÔ³Âúÿÿÿÿ
+}javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(šë•³
+ˆjavascript:S2703"iAdd the "let", "const" or "var" keyword to this declaration of "combinationsHashSet" to make it explicit.(§¯Õºÿÿÿÿÿ
+ajavascript:S2814"BRename "i" as this name is already used in declaration at line 39.(ö¦Œ¡ÿÿÿÿÿ
+i!javascript:ExcessiveParameterList">Function has 11 parameters which is greater than 7 authorized.(Ú”
+Šjavascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(úáÊÖÿÿÿÿÿ
+…javascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(À”Ïö
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(²í ùÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ıÊÊ÷øÿÿÿÿ
+ajavascript:S2814"BRename "j" as this name is already used in declaration at line 38.(©¯Íâùÿÿÿÿ
+kjavascript:FunctionComplexity"DFunction has a complexity of 15 which is greater than 10 authorized.(ÉÖ·²
+pjavascript:FunctionComplexity"DFunction has a complexity of 40 which is greater than 10 authorized.(æ‡üçøÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(´·İøÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(‘æ¶€
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(ÏÎæ¥ıÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(Šø¿Úûÿÿÿÿ
+Šjavascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(¨âƒ½ùÿÿÿÿ
+javascript:S2703"bAdd the "let", "const" or "var" keyword to this declaration of "customAction" to make it explicit.(–†Åòıÿÿÿÿ
+ujavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(©õ„¿ÿÿÿÿÿ
+†javascript:S2703"gAdd the "let", "const" or "var" keyword to this declaration of "combinationImages" to make it explicit.(Ğ”…øÿÿÿÿ
+javascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(ÌïÀŞûÿÿÿÿ
+~javascript:S2703"_Add the "let", "const" or "var" keyword to this declaration of "tabParams" to make it explicit.(ïğ´–üÿÿÿÿ
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(…‹ê¤ÿÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(¤šŞêÿÿÿÿÿ
+]"javascript:CollapsibleIfStatements",Merge this if statement with the nested one.(¿è˜ªøÿÿÿÿ
+Y!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(ä„ÅÚúÿÿÿÿ
+yjavascript:S2703"_Add the "let", "const" or "var" keyword to this declaration of "fieldName" to make it explicit.(×¡ûó
+;javascript:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
+pjavascript:S2814"QRename "discountedPrice" as this name is already used in declaration at line 929.(Ó“¢ãÿÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(¸ğĞ·
+†javascript:S2703"gAdd the "let", "const" or "var" keyword to this declaration of "quantityAvailable" to make it explicit.(†…“úÿÿÿÿ
+jjavascript:S2814"KRename "reduction" as this name is already used in declaration at line 713.(·–Úšùÿÿÿÿ
+Y!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(èé­¹øÿÿÿÿ
+ejavascript:S1854"FRemove this useless assignment to local variable "productPriceDisplay"(ÊØ„Šùÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(±ã™œüÿÿÿÿ
+cjavascript:S2814"DRename "key" as this name is already used in declaration at line 41.(èÑÉøÿÿÿÿ
+ˆjavascript:S2703"iAdd the "let", "const" or "var" keyword to this declaration of "combinationImagesJS" to make it explicit.(¤ù¦Ôûÿÿÿÿ
+}javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(¬ç”
+T!javascript:UnusedFunctionArgument")Remove the unused function parameter "e".(„¨ı 
+pjavascript:FunctionComplexity"DFunction has a complexity of 13 which is greater than 10 authorized.(“ùÌ‹üÿÿÿÿ
+wjavascript:S2703"]Add the "let", "const" or "var" keyword to this declaration of "request" to make it explicit.(ë¦Ü¯
+…javascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(·¼¿Ç
+javascript:S2703"`Add the "let", "const" or "var" keyword to this declaration of "unit_price" to make it explicit.(–ä÷Êıÿÿÿÿ
+|javascript:S2703"bAdd the "let", "const" or "var" keyword to this declaration of "combinations" to make it explicit.(­Ñøö
+…javascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(±Ôï
+…javascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(†õÛù
+|javascript:UnusedVariable"TRemove the declaration of the unused 'productPriceWithoutReductionDisplay' variable.(Äõ¸¯ıÿÿÿÿ
+Šjavascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(½¡ŒÛûÿÿÿÿ
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(§Å€
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(ö¦Œ¡ÿÿÿÿÿ
+cjavascript:S2814"DRename "key" as this name is already used in declaration at line 41.(ÎİÆôÿÿÿÿÿ
+ajavascript:S2814"BRename "k" as this name is already used in declaration at line 52.(¿÷£Àıÿÿÿÿ
+pjavascript:FunctionComplexity"DFunction has a complexity of 14 which is greater than 10 authorized.(û­ÛÎüÿÿÿÿ
+~javascript:S2703"dAdd the "let", "const" or "var" keyword to this declaration of "combinationsJS" to make it explicit.(”½ËÇ
+{javascript:S2703"\Add the "let", "const" or "var" keyword to this declaration of "ecotax" to make it explicit.(ª÷Êüÿÿÿÿ
+Xjavascript:ForIn"9Restrict what this loop acts on by testing each property.(©¯Íâùÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(ğùŞæıÿÿÿÿ
+{javascript:S2703"\Add the "let", "const" or "var" keyword to this declaration of "params" to make it explicit.(½à¸üúÿÿÿÿ
+‚javascript:S2703"cAdd the "let", "const" or "var" keyword to this declaration of "baseUnitPrice" to make it explicit.(“¨«Åÿÿÿÿÿ
+‰javascript:S2703"oAdd the "let", "const" or "var" keyword to this declaration of "priceWithDiscountsDisplay" to make it explicit.(ıìüß
+zjavascript:S3757"`Change the expression which uses this operand so that it can't evaluate to "NaN" (Not a Number).(ÁúÍ 
+|javascript:S2703"bAdd the "let", "const" or "var" keyword to this declaration of "id_attribute" to make it explicit.(î‡Ú´
+}javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(–êè¡
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(äğß¡ıÿÿÿÿ
+}javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(©…£Ì
+kjavascript:FunctionComplexity"DFunction has a complexity of 46 which is greater than 10 authorized.(”Ğ¼Ç
+pjavascript:NestedIfDepth"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(®æÜÊ
+yjavascript:S1067"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(ÃÇ¬úÿÿÿÿ
+Šjavascript:S3579"kMake "selectedCombination" an object if it must have named properties; otherwise, use a numeric index here.(±˜‚áûÿÿÿÿ
+ujavascript:S1854"VRemove this useless assignment to local variable "productPriceWithoutReductionDisplay"(Äõ¸¯ıÿÿÿÿ
+}javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(¶£ñ
+ajavascript:S2814"BRename "i" as this name is already used in declaration at line 39.(ÿı”ıÿÿÿÿ
+…javascript:S2703"fAdd the "let", "const" or "var" keyword to this declaration of "basePriceDisplay" to make it explicit.(êƒÒ¬ùÿÿÿÿ
+‚javascript:S3579"cMake "combination" an object if it must have named properties; otherwise, use a numeric index here.(Ô¦š¨øÿÿÿÿ

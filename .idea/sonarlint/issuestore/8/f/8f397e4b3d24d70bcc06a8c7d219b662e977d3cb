@@ -1,0 +1,6 @@
+
+Qphp:S105"EReplace all tab characters in this file by sequences of white-spaces.
+0	php:S2010"Replace "and" with "&&".(È½ƒ²ıÿÿÿÿ
++	php:S2010"Replace "and" with "&&".(Üòøš
+{php:S115"dRename this constant "_PS_ADMIN_DIR_" to match the regular expression ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$.(§³âçùÿÿÿÿ
+]	php:S1192"KDefine a constant instead of duplicating this literal "id_product" 3 times.(ƒ¤
