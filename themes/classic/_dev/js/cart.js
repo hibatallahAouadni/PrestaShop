@@ -22,6 +22,20 @@ function createSpin()
       min: parseInt($(spinner).attr('min'), 10),
       max: 1000000
     });
+    // $('.js-cart-line-product-quantity').on('change', function (event) {
+    //   $('.product-info-price').empty().append(
+    //       '<div class="product-discount has-discount">'+
+    //         '<span class="regular-price">100,00&nbsp;€</span>'+
+    //         '<span class="discount discount-amount">'+
+    //           '<small>-20,00&nbsp;€</small>'+
+    //         '</span>'+
+    //       '</div>'+
+    //       '<div class="product-price h5 has-discount">'+
+    //       '<div class="current-price">'+
+    //         '<span itemprop="price" content="80">80,00€</span>'+
+    //       '</div>'
+    //     );
+    // });
   });
 }
 

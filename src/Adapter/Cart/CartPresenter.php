@@ -106,14 +106,21 @@ class CartPresenter implements PresenterInterface
             $rawProduct['id_product_attribute']
         );
 
-        $rawProduct['ecotax_rate'] = '';
-        $rawProduct['specific_prices'] = '';
-        $rawProduct['customizable'] = '';
-        $rawProduct['online_only'] = '';
-        $rawProduct['reduction'] = '';
-        $rawProduct['new'] = '';
-        $rawProduct['condition'] = '';
-        $rawProduct['pack'] = '';
+        $resetFields = array(
+            'ecotax_rate',
+            'specific_prices',
+            'customizable',
+            'online_only',
+            'reduction',
+            'new',
+            'condition',
+            'pack',
+        );
+        foreach ($resetFields as $field) {
+            if (!array_key_exists($field, $rawProduct)) {
+                $rawProduct[$field] = '';
+            }
+        }
 
         if ($this->includeTaxes()) {
             $rawProduct['price_amount'] = $rawProduct['price_wt'];
