@@ -586,7 +586,7 @@ class CartCore extends ObjectModel
      *
      * @result array Products
      */
-    public function getProducts($refresh = false, $id_product = false, $id_country = null)
+    public function getProducts($refresh = false, $id_product = false, $id_country = null, $updateAjax = false)
     {
         if (!$this->id) {
             return array();
@@ -612,7 +612,7 @@ class CartCore extends ObjectModel
         $sql->select('cp.`id_product_attribute`, cp.`id_product`, cp.`quantity` AS cart_quantity, cp.id_shop, cp.`id_customization`, pl.`name`, p.`is_virtual`,
                         pl.`description_short`, pl.`available_now`, pl.`available_later`, product_shop.`id_category_default`, p.`id_supplier`,
                         p.`id_manufacturer`, product_shop.`on_sale`, product_shop.`ecotax`, product_shop.`additional_shipping_cost`,
-                        product_shop.`available_for_order`, product_shop.`price`, product_shop.`active`, product_shop.`unity`, product_shop.`unit_price_ratio`,
+                        product_shop.`available_for_order`, product_shop.`show_price`, product_shop.`price`, product_shop.`active`, product_shop.`unity`, product_shop.`unit_price_ratio`,
                         stock.`quantity` AS quantity_available, p.`width`, p.`height`, p.`depth`, stock.`out_of_stock`, p.`weight`,
                         p.`date_add`, p.`date_upd`, IFNULL(stock.quantity, 0) as quantity, pl.`link_rewrite`, cl.`link_rewrite` AS category,
                         CONCAT(LPAD(cp.`id_product`, 10, 0), LPAD(IFNULL(cp.`id_product_attribute`, 0), 10, 0), IFNULL(cp.`id_address_delivery`, 0), IFNULL(cp.`id_customization`, 0)) AS unique_id, cp.id_address_delivery,
@@ -699,7 +699,7 @@ class CartCore extends ObjectModel
             foreach ($result as $key => $row) {
                 $products_ids[] = $row['id_product'];
                 $pa_ids[] = $row['id_product_attribute'];
-                $specific_price = SpecificPrice::getSpecificPrice($row['id_product'], $this->id_shop, $this->id_currency, $id_country, $this->id_shop_group, $row['cart_quantity'], $row['id_product_attribute'], $this->id_customer, $this->id);
+                $specific_price = SpecificPrice::getSpecificPrice($row['id_product'], $this->id_shop, $this->id_currency, $id_country, $this->id_shop_group, $row['cart_quantity'], $row['id_product_attribute'], $this->id_customer, $this->id, $row['cart_quantity']);
                 if ($specific_price) {
                     $reduction_type_row = array('reduction_type' => $specific_price['reduction_type']);
                 } else {
@@ -750,6 +750,10 @@ class CartCore extends ObjectModel
             }
         }
 
+        if(!$updateAjax){
+            $result = Product::getProductsProperties((int)$this->id_lang, $result);
+        }
+
         foreach ($result as &$row) {
             if (!array_key_exists('is_gift', $row)) {
                 $row['is_gift'] = false;
@@ -773,7 +777,6 @@ class CartCore extends ObjectModel
                     $row['cart_quantity'] - $givenAwayQuantity
                 );
             }
-
             $this->_products[] = $row;
         }
 

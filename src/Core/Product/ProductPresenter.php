@@ -403,6 +403,9 @@ class ProductPresenter
         if (isset($product['available_date']) && '0000-00-00' == $product['available_date']) {
             $product['available_date'] = null;
         }
+        if(!isset($product['available_date'])){
+            $product['available_date'] = null;
+        }
 
         if ($show_availability) {
             if ($product['quantity'] > 0) {

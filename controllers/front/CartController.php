@@ -100,23 +100,46 @@ class CartControllerCore extends FrontController
             return;
         }
 
-        $productsInCart = $this->context->cart->getProducts();
+        $productsInCart = $this->context->cart->getProducts(true, false, null, true);
         $updatedProducts = array_filter($productsInCart, array($this, 'productInCartMatchesCriteria'));
         list(, $updatedProduct) = each($updatedProducts);
         $productQuantity = $updatedProduct['quantity'];
 
+        $id_customer = (isset($this->context->customer) ? (int) $this->context->customer->id : 0);
+        $id_group = (int) Group::getCurrent()->id;
+        $id_country = $id_customer ? (int) Customer::getCurrentCountry($id_customer) : (int) Tools::getCountry();
+        $id_currency = (int) $this->context->cookie->id_currency;
+        $id_shop = $this->context->shop->id;
+        $quantity_discounts = SpecificPrice::getQuantityDiscounts($this->id_product, $id_shop, $id_currency, $id_country, $id_group, $this->id_product_attribute, false, (int) $this->context->customer->id);
+        foreach ($quantity_discounts as &$quantity_discount) {
+            if ($quantity_discount['id_product_attribute']) {
+                $combination = new Combination((int) $quantity_discount['id_product_attribute']);
+                $attributes = $combination->getAttributesName((int) $this->context->language->id);
+                foreach ($attributes as $attribute) {
+                    $quantity_discount['attributes'] = $attribute['name'].' - ';
+                }
+                $quantity_discount['attributes'] = rtrim($quantity_discount['attributes'], ' - ');
+            }
+            if ((int) $quantity_discount['id_currency'] == 0 && $quantity_discount['reduction_type'] == 'amount') {
+                $quantity_discount['reduction'] = Tools::convertPriceFull($quantity_discount['reduction'], null, Context::getContext()->currency);
+            }
+        }
+
         if (!$this->errors) {
             $this->ajaxDie(Tools::jsonEncode([
+                'cart_detailed' => $this->render('checkout/_partials/cart-detailed'),
                 'success' => true,
                 'id_product' => $this->id_product,
                 'id_product_attribute' => $this->id_product_attribute,
                 'quantity' => $productQuantity,
+                'quantity_discount' => $quantity_discounts,
             ]));
         } else {
             $this->ajaxDie(Tools::jsonEncode([
                 'hasError' => true,
                 'errors' => $this->errors,
                 'quantity' => $productQuantity,
+                'quantity_discounts' => $quantity_discounts,
             ]));
         }
     }

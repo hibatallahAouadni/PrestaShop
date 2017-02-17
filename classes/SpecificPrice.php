@@ -267,6 +267,7 @@ class SpecificPriceCore extends ObjectModel
             $ending = $now;
         }
         $id_customer = (int)$id_customer;
+        $id_cart = (int)$id_cart;
 
         $query_extra = '';
 
@@ -328,7 +329,7 @@ class SpecificPriceCore extends ObjectModel
         }
     }
 
-    public static function getSpecificPrice($id_product, $id_shop, $id_currency, $id_country, $id_group, $quantity, $id_product_attribute = null, $id_customer = 0, $id_cart = 0, $real_quantity = 0)
+    public static function getSpecificPrice($id_product, $id_shop, $id_currency, $id_country, $id_group, $quantity, $id_product_attribute = null, $id_customer = 0, $id_cart, $real_quantity = 0)
     {
         if (!SpecificPrice::isFeatureActive()) {
             return array();
