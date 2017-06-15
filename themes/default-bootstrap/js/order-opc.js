@@ -354,6 +354,22 @@ function updateAddressSelection(is_adv_api)
 	$('#opc_delivery_methods-overlay').fadeIn('slow');
 	$('#opc_payment_methods-overlay').fadeIn('slow');
 
+	var delivery_option_radio = $('input.delivery_option_radio');
+	var delivery_option_params = '&';
+	$.each(delivery_option_radio, function(i) {
+		name = 'delivery_option['+idAddress_delivery+']';
+		$(this).attr('name', name);
+		$(this).attr('data-id_address',idAddress_delivery);
+		data_index = $(delivery_option_radio[i]).data('index');
+		console.log(delivery_option_radio[i]);
+		$(this).attr('id','delivery_option_'+idAddress_delivery+'_'+data_index);
+		if ($(this).prop('checked')) {
+			delivery_option_params +=  name+ '=' + $(delivery_option_radio[i]).val() + '&';
+		}
+	});
+	if (delivery_option_params == '&')
+		delivery_option_params = '&delivery_option=&';
+
 	$.ajax({
 		type: 'POST',
 		headers: { "cache-control": "no-cache" },
@@ -362,7 +378,7 @@ function updateAddressSelection(is_adv_api)
 		cache: false,
 		dataType : "json",
 		data: 'allow_refresh=1&ajax=true&method=updateAddressesSelected&id_address_delivery=' + idAddress_delivery +
-              '&id_address_invoice=' + idAddress_invoice + '&token=' + static_token +
+              '&id_address_invoice=' + idAddress_invoice + delivery_option_params + 'token=' + static_token +
               (is_adv_api ? '&isAdvApi=1' : ''),
 		success: function(jsonData)
 		{
@@ -446,7 +462,7 @@ function updateAddressSelection(is_adv_api)
 							$(this).attr('id', $(this).attr('id').replace(/_\d+$/, '_' + idAddress_delivery));
 					});
 				}
-				updateCarrierList(jsonData.carrier_data);
+				// updateCarrierList(jsonData.carrier_data);
 				updatePaymentMethods(jsonData);
 				updateCartSummary(jsonData.summary);
 				updateHookShoppingCart(jsonData.HOOK_SHOPPING_CART);
@@ -542,11 +558,15 @@ function updateCarrierSelectionAndGift()
 	var gift = 0;
 	var giftMessage = '';
 
+	var idAddress_delivery = ($('#opc_id_address_delivery').length == 1 ? $('#opc_id_address_delivery').val() : $('#id_address_delivery').val());
 	var delivery_option_radio = $('.delivery_option_radio');
 	var delivery_option_params = '&';
 	$.each(delivery_option_radio, function(i) {
-		if ($(this).prop('checked'))
-			delivery_option_params += $(delivery_option_radio[i]).attr('name') + '=' + $(delivery_option_radio[i]).val() + '&';
+		if ($(this).prop('checked')){
+			name = 'delivery_option['+idAddress_delivery+']';
+			$(delivery_option_radio[i]).attr("name", name);
+			delivery_option_params +=  name+ '=' + $(delivery_option_radio[i]).val() + '&';
+		}
 	});
 	if (delivery_option_params == '&')
 		delivery_option_params = '&delivery_option=&';

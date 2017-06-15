@@ -214,6 +214,17 @@ class OrderOpcControllerCore extends ParentOrderController
                                 } else {
                                     $this->context->cart->id_address_delivery = (int)Tools::getValue('id_address_delivery');
                                     $this->context->cart->id_address_invoice = Tools::isSubmit('same') ? $this->context->cart->id_address_delivery : (int)Tools::getValue('id_address_invoice');
+
+                                    if(Tools::isSubmit('delivery_option')){
+                                        $this->_processCarrier();
+//                                        if (Tools::getIsset('delivery_option')) {
+//                                            if ($this->validateDeliveryOption(Tools::getValue('delivery_option'))) {
+//                                                $this->context->cart->setDeliveryOption(Tools::getValue('delivery_option'));
+//                                            }
+//                                        }
+//                                        $id_carrier = (Tools::isSubmit('id_carrier'))? Tools::isSubmit('id_carrier'):Tools::isSubmit('delivery_option');
+//                                        $this->context->cart->setDeliveryOption(array((int)Tools::getValue('id_address_delivery')=>$id_carrier.','));
+                                    }
                                     if (!$this->context->cart->update()) {
                                         $this->errors[] = Tools::displayError('An error occurred while updating your cart.');
                                     }
