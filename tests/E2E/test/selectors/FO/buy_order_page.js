@@ -31,7 +31,16 @@ module.exports = {
     order_shipping_prince_value: '//*[@id="order-items"]/div/table/tbody/tr[2]/td[2]',
     customer_name: '//*[@id="_desktop_user_info"]/div/a[2]/span',
     shipping_method: '//*[@id="order-details"]/ul/li[3]',
-
-
+    //----------------- create an account from checkout -----------------//
+    add_to_cart_btn: '//*[@id="add-to-cart-or-refresh"]//button[@data-button-action="add-to-cart"]',
+    proceed_to_checkout_btn: '//*[@id="blockcart-modal"]//a',
+    proceed_to_checkout_btn2: '//*[@id="main"]//div[contains(@class, "checkout")]//a',
+    shipping_continue_btn: '//*[@id="js-delivery"]/button[@name="confirmDeliveryOption"]',
+    pay_by_check: '//*[@id="payment-option-1"]',
+    terms_of_service: '//*[@id="conditions_to_approve[terms-and-conditions]"]',
+    order_button: '//*[@id="payment-confirmation"]//button',
+    order_confirmation_notification: '//*[@id="content-hook_order_confirmation"]//h3',
+    text_notification: '//*[@id="content-hook_order_confirmation"]//p',
+    order_details: '//*[@id="order-items"]//div[contains(@class, "details")]/span'
   }
 };

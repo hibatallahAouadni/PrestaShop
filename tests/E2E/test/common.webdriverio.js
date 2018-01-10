@@ -92,6 +92,18 @@ function initCommands(client) {
             .waitForExist(selector.menuBO, 90000)
     });
 
+    client.addCommand('accessToBO', function (selector) {
+        return client
+            .url('http://' + URL + '/admin-dev')
+            .waitForExist(selector.login_input)
+    });
+
+    client.addCommand('accessToFO', function (selector) {
+        return client
+            .url('http://' + URL)
+            .waitForExistAndClick(selector.logo_home_page)
+    });
+
     client.addCommand('signInFO', function (selector) {
         return client
             .url('http://' + URL)

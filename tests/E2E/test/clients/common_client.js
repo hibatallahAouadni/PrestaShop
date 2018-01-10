@@ -27,6 +27,14 @@ class CommonClient {
   signOutFO(selector) {
     return this.client.signOutFO(selector);
   }
+    
+  accessToBO(selector) {
+      return this.client.accessToBO(selector);
+  }
+
+  accessToFO(selector) {
+      return this.client.accessToFO(selector);
+  }
 
   goToSubtabMenuPage(menuSelector, selector) {
     return this.client
@@ -159,6 +167,24 @@ class CommonClient {
         break;
     }
   }
+
+  checkAttributeValue(selector, attribute, value, parameter = 'equal') {
+    switch (parameter) {
+      case "equal":
+        return this.client
+            .waitForExist(selector, 90000)
+            .then(() => this.client.getAttribute(selector, attribute))
+            .then((text) => expect(text).to.equal(value));
+        break;
+      case "notequal":
+        return this.client
+            .waitForExist(selector, 90000)
+            .then(() => this.client.getAttribute(selector, attribute))
+            .then((text) => expect(text).to.not.equal(value));
+        break;
+    }
+  }
+
 
   uploadPicture(picture, selector, className = "dz-hidden-input") {
     return this.client
