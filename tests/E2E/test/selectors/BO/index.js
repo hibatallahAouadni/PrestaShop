@@ -8,7 +8,8 @@ module.exports = Object.assign({},
   require('./order_page'),
   require('./create_order'),
   require('./product_list'),
-  require('./shopParameters')
-  require('./international')
+  require('./shopParameters'),
+  require('./international'),
+  require('./employee_page')
 );
 

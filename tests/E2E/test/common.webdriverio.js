@@ -81,6 +81,18 @@ function initCommands(client) {
             .waitForExist(selector, timeout)
             .selectByVisibleText(selector, value)
     });
+
+    client.addCommand('accessToBO', function (selector) {
+        return client
+            .url('http://' + URL + '/admin-dev')
+            .waitForExist(selector.login_input)
+    });
+
+    client.addCommand('accessToFO', function (selector) {
+        return client
+            .url('http://' + URL)
+            .waitForExistAndClick(selector.logo_home_page)
+    });
     
     client.addCommand('signInBO', function (selector) {
         this.selector = globals.selector;

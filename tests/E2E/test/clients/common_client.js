@@ -28,6 +28,18 @@ class CommonClient {
         return this.client.signOutFO(selector);
     }
 
+    accessToBO(selector) {
+        return this.client.accessToBO(selector);
+    }
+
+    accessToFO(selector) {
+        return this.client.accessToFO(selector);
+    }
+
+    alertAccept() {
+        return this.client.alertAccept();
+    }
+
     goToSubtabMenuPage(menuSelector, selector) {
         return this.client
             .waitForExist(menuSelector, 90000)
