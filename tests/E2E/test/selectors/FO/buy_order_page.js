@@ -9,8 +9,8 @@ module.exports = {
     product_quantity_details: '#quantity_wanted',
     product_name: '(//div[@class="product-line-info"])[1]/a',
     product_price: '//span[@class="price"]',
-    checkout_step2_continue_button: '//*[@id="checkout-addresses-step"]/div/div/form/div[2]/button',
-    checkout_step3_continue_button: '//*[@id="js-delivery"]/button',
+    checkout_step2_continue_button: '//*[@id="checkout-addresses-step"]//button[@name="confirm-addresses"]',
+    checkout_step3_continue_button: '//*[@id="js-delivery"]/button[@name="confirmDeliveryOption"]',
     checkout_step4_payment_radio: '//*[@id="payment-option-2"]',
     checkout_step4_cgv_checkbox: '//input[@id="conditions_to_approve[terms-and-conditions]"]',
     checkout_step4_order_button: '#payment-confirmation >div > button',
@@ -23,7 +23,7 @@ module.exports = {
     message_textarea: '//*[@id="delivery_message"]',
     condition_check_box: '//*[@id="conditions_to_approve[terms-and-conditions]"]',
     confirmation_order_button: '//*[@id="payment-confirmation"]/div[1]/button',
-    confirmation_order_message: '//*[@id="content-hook_order_confirmation"]/div/div/div/h3',
+    confirmation_order_message: '//*[@id="content-hook_order_confirmation"]//h3',
     order_product: '//*[@id="order-items"]/div/div/div[2]/span',
     order_reference: '//*[@id="order-details"]/ul/li[1]',
     order_basic_price: '//*[@id="order-items"]/div/div/div[3]/div/div[1]',
@@ -31,7 +31,13 @@ module.exports = {
     order_shipping_prince_value: '//*[@id="order-items"]/div/table/tbody/tr[2]/td[2]',
     customer_name: '//*[@id="_desktop_user_info"]/div/a[2]/span',
     shipping_method: '//*[@id="order-details"]/ul/li[3]',
-
-
+    //----------------- create order with account -----------------//
+    add_to_cart_btn: '//*[@id="add-to-cart-or-refresh"]//button[@data-button-action="add-to-cart"]',
+    proceed_to_checkout_btn: '//*[@id="blockcart-modal"]//a',
+    proceed_to_checkout_btn2: '//*[@id="main"]//div[contains(@class, "checkout")]//a',
+    order_button: '//*[@id="payment-confirmation"]//button',
+    text_notification: '//*[@id="content-hook_order_confirmation"]//p',
+    order_details: '//*[@id="order-items"]//div[contains(@class, "details")]/span',
+    sign_in_link: '[data-link-action="show-login-form"]'
   }
 };

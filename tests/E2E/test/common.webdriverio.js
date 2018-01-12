@@ -113,6 +113,18 @@ function initCommands(client) {
             .waitForExist(selector.sign_in_button, 90000)
             .deleteCookie();
     });
+
+    client.addCommand('accessToBO', function (selector) {
+        return client
+            .url('http://' + URL + '/admin-dev')
+            .waitForExist(selector.login_input)
+    });
+
+    client.addCommand('accessToFO', function (selector) {
+        return client
+            .url('http://' + URL)
+            .waitForExistAndClick(selector.logo_home_page)
+    });
 }
 
 module.exports = {
