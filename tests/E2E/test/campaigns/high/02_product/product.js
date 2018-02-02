@@ -4,7 +4,7 @@ let promise = Promise.resolve();
 module.exports = {
   createProduct: function (AddProductPage, productData) {
     scenario('Create a new product in the Back Office', client => {
-      test('should go to "Product Settings" page', () => client.waitForExistAndClick(Menu.Sell.Catalog.catalog_menu));
+      test('should go to "Product" page', () => client.waitForExistAndClick(Menu.Sell.Catalog.catalog_menu));
       test('should click on "New Product" button', () => client.waitForExistAndClick(AddProductPage.new_product_button));
       test('should set the "Name" input', () => client.waitAndSetValue(AddProductPage.product_name_input, productData["name"] + date_time));
       test('should set the "Quantity" input', () => client.waitAndSetValue(AddProductPage.quantity_shortcut_input, productData["quantity"]));
@@ -12,10 +12,12 @@ module.exports = {
       test('should upload the first product picture', () => client.uploadPicture(productData["image_name"], AddProductPage.picture));
 
       if (productData.hasOwnProperty('type')) {
-        scenario('Add the created product to pack', client => {
-          test('should select the "Pack of products"', () => client.waitAndSelectByValue(AddProductPage.product_type, 1));
-          test('should add products to the pack', () => client.addPackProduct(productData['product']['name'] + date_time, productData['product']['quantity']));
-        }, 'product/product');
+        if(productData['type'] === 'pack') {
+            scenario('Add the created product to pack', client => {
+                test('should select the "Pack of products"', () => client.waitAndSelectByValue(AddProductPage.product_type, 1));
+                test('should add products to the pack', () => client.addPackProduct(productData['product']['name'] + date_time, productData['product']['quantity']));
+            }, 'product/product');
+        }
       }
 
       if (productData.hasOwnProperty('attribute')) {
@@ -53,5 +55,16 @@ module.exports = {
 
     }, 'product/product');
 
+  },
+
+  editPackQuantity: function (AddProductPage, pack_name, pack_stock_type, pack_stock_type_value) {
+    scenario('Edit pack stock type', client => {
+      test('should go to "Product" page', () => client.waitForExistAndClick(Menu.Sell.Catalog.catalog_menu));
+      test('should search for pack by name', () => client.searchProductByName(pack_name));
+      test('should click on the edit link', () => client.waitForExistAndClick(AddProductPage.catalog_product_name));
+      test('should click on "Quantities"', () => client.scrollWaitForExistAndClick(AddProductPage.product_quantities_tab, 50));
+      test('should choose "' + pack_stock_type + '" as value for the "Pack quantities" select', () => client.waitAndSelectByValue(AddProductPage.pack_stock_type, pack_stock_type_value));
+      test('should click on "SAVE"', () => client.waitForExistAndClick(AddProductPage.save_product_button));
+    }, 'product/check_product');
   }
 };

@@ -24,6 +24,16 @@ module.exports = {
   checkMovementHistory: function (client, Movement, movementIndex, itemNumber, option, type) {
     test('should go to "Movements" tab', () => client.goToStockMovements(Movement));
     test('should check movement history', () => client.checkMovement(Movement, movementIndex, itemNumber, option, type));
+  },
+
+  checkProductMovement: function (CatalogPage, Stock, Movement, product_name, movementIndex, itemNumber, option, type) {
+      scenario('Check the stock movement', client => {
+          test('should go to "Stocks" page', () => client.goToSubtabMenuPage(CatalogPage.menu_button, Stock.submenu));
+          test('should go to "Movements" tab', () => client.goToStockMovements(Movement));
+          test('should set the "Search products" input', () => client.waitAndSetValue(Stock.search_input, product_name));
+          test('should click on "Search" button', () => client.waitForExistAndClick(Stock.search_button));
+          test('should check movement history', () => client.checkMovement(Movement, movementIndex, itemNumber, option, type));
+      }, 'stocks');
   }
 
 };

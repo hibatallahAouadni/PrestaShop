@@ -2,18 +2,66 @@ const {productPage} = require('../../../selectors/FO/product_page');
 const {CheckoutOrderPage} = require('../../../selectors/FO/order_page');
 const {accountPage} = require('../../../selectors/FO/add_account_page');
 
-var data = require('./../../../datas/customer_and_address_data');
+let data = require('./../../../datas/customer_and_address_data');
 let promise = Promise.resolve();
 
+// the parameter "attributes" should be filled like this structure below
+let attributeData = [{
+    name: 'size',
+    value: "M",
+    selector: productPage.first_product_size,
+    selector_type: 'select',
+    selector_value: '2',
+}, {
+    name: 'color',
+    value: "blue",
+    selector: productPage.first_product_color,
+    selector_type: 'button',
+    selector_value: '',
+}];
+
 module.exports = {
-  createOrder: function (authentication = "connected") {
+    /**
+     *
+     * @param authentication
+     * @param SearchProductPage (to use all the selectors that we need when you search for a product)
+     * @param product_name (you need to fill if you want make an order with specific product)
+     * @param product_type (its value should be one of these ["simple product", "product with combinations", "pack"])
+     * @param product_quantity
+     * @param attributes (its structure should be like attributeData above)
+     */
+  createOrder: function (authentication = "connected", SearchProductPage = null, product_name = "first product page", product_type = "simple product", product_quantity = "1", attributes = attributeData) {
     scenario('Create order in the Front Office', client => {
       test('should set the language of shop to "English"', () => client.changeLanguage());
-      test('should go to the first product page', () => client.waitForExistAndClick(productPage.first_product));
-      test('should select product "size M" ', () => client.waitAndSelectByValue(productPage.first_product_size, '2'));
-      test('should select product "color blue"', () => client.waitForExistAndClick(productPage.first_product_color));
-      test('should set the product "quantity"', () => client.waitAndSetValue(productPage.first_product_quantity, "4"));
-      test('should click on "Add to cart" button  ', () => client.waitForExistAndClick(CheckoutOrderPage.add_to_cart_button));
+      if(SearchProductPage === null) {
+          test('should go to the ' + product_name, () => client.waitForExistAndClick(productPage.first_product));
+      } else {
+          test('should search for the ' +product_type + ' "' + product_name + '"', () => client.searchByValue(SearchProductPage.search_input, SearchProductPage.search_button, product_name));
+          test('should go to the product page', () => client.waitForExistAndClick(SearchProductPage.product_result_name));
+      }
+      if(product_name === "first product page") {
+          test('should select product "size M" ', () => client.waitAndSelectByValue(productPage.first_product_size, '2'));
+          test('should select product "color blue"', () => client.waitForExistAndClick(productPage.first_product_color));
+          test('should set the product "quantity"', () => client.waitAndSetValue(productPage.first_product_quantity, "4"));
+      }
+      if(product_type === "product with combinations") {
+          for(let i = 0 ; i < attributes.length;i++) {
+            if(attributes[i]['selector_type'] === 'select') {
+                test('should select product' + attributes[i]['name'] + ' "' + attributes[i]['value'] + '" ', () => client.waitAndSelectByValue(attributes[i]['selector'], attributes[i]['selector_value']));
+            }
+            if(attributes[i]['selector_type'] === 'button') {
+                test('should select product' + attributes[i]['name'] + ' "' + attributes[i]['value'] + '" ', () => client.waitForExistAndClick(attributes[i]['selector']));
+            }
+            if(attributes[i]['selector_type'] === 'text') {
+                test('should select product' + attributes[i]['name'] + ' "' + attributes[i]['value'] + '" ', () => client.waitAndSetValue(attributes[i]['selector'], attributes[i]['selector_value']));
+            }
+          }
+      }
+      if(product_quantity !== "1") {
+          test('should set the product "quantity"', () => client.waitAndSetValue(productPage.first_product_quantity, product_quantity));
+      }
+
+      test('should click on "Add to cart" button', () => client.waitForExistAndClick(CheckoutOrderPage.add_to_cart_button));
       test('should click on proceed to checkout button 1', () => client.waitForVisibleAndClick(CheckoutOrderPage.proceed_to_checkout_modal_button));
       test('should click on proceed to checkout button 2', () => client.waitForExistAndClick(CheckoutOrderPage.proceed_to_checkout_button));
 
@@ -90,5 +138,21 @@ module.exports = {
       test('should set the order status ', () => client.waitAndSelectByValue(OrderPage.order_state_select, '1'));
       test('should click on "Create the order"', () => client.waitForExistAndClick(CreateOrder.create_order_button));
     }, 'order');
+  },
+  setStatusOrder: function (OrderPage, customer_name, message_order, old_status, status) {
+    scenario('Set the status of order to "' + status + '"', client => {
+      test('should go to "Orders" page', () => client.goToSubtabMenuPage(OrderPage.orders_subtab, OrderPage.order_submenu));
+      test('should search the order created by reference', () => client.waitAndSetValue(OrderPage.search_by_reference_input, global.tab['reference']));
+      test('should go to search order', () => client.waitForExistAndClick(OrderPage.search_order_button));
+      test('should go to the order ', () => client.scrollWaitForExistAndClick(OrderPage.view_order_button.replace('%NUMBER', 1)));
+      test('should check the customer name ', () => client.checkTextValue(OrderPage.customer_name, customer_name, 'contain'));
+      test('should status be equal to "' + old_status + '"', () => client.checkTextValue(OrderPage.order_status, old_status));
+      test('should check the order message ', () => client.checkTextValue(OrderPage.message_order, message_order));
+      test('should set order status to "' + status + '"', () => client.updateStatus(status));
+      test('should click on "UPDATE STATUS" button', () => client.waitForExistAndClick(OrderPage.update_status_button));
+      test('should check status to be equal to "' + status + '"', () => client.checkTextValue(OrderPage.order_status, status));
+      test('should go back to "Orders" page', () => client.goToSubtabMenuPage(OrderPage.orders_subtab, OrderPage.order_submenu));
+      test('should click on "Reset" button', () => client.waitForExistAndClick(OrderPage.reset_search_button));
+     }, 'order');
   }
 };
