@@ -49,11 +49,11 @@ module.exports = {
   resetModule: function (client, ModulePage, AddProductPage, Menu, moduleName, moduleTechName) {
     test('should go to "Module" page', () => client.goToSubtabMenuPage(Menu.Improve.Modules.modules_menu, Menu.Improve.Modules.modules_services_submenu));
     test('should click on "Installed Modules"', () => client.waitForVisibleAndClick(ModulePage.installed_modules_tabs));
-    test('should search for ' + moduleName + ' module in the installed module tab', () => client.waitAndSetValue(ModulePage.modules_search_input, moduleTechName));
+    test('should search for "' + moduleName + '" module in the installed module tab', () => client.waitAndSetValue(ModulePage.modules_search_input, moduleTechName));
     test('should click on "Search" button', () => client.waitForExistAndClick(ModulePage.modules_search_button));
     test('should click on module dropdown', () => client.waitForVisibleAndClick(ModulePage.option_button));
     test('should click on "Reset" action', () => client.waitForExistAndClick(ModulePage.reset_module));
-    test('should click on "Reset" button', () => client.waitForExistAndClick(ModulePage.reset_button));
+    test('should click on "Reset" button', () => client.waitForVisibleAndClick(ModulePage.reset_button));
     test('should check that the success alert message is well displayed', () => client.waitForExistAndClick(AddProductPage.close_validation_button));
     test('should go to "Dashboard" page', () => client.waitForExistAndClick(Menu.dashboard_menu));
   },

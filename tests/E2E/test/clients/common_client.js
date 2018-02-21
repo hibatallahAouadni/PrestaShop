@@ -274,15 +274,6 @@ class CommonClient {
       .then((isExisting) => expect(isExisting).to.be.true)
   }
 
-  clickOnResumeButton(selector) {
-    if (!global.isVisible) {
-      return this.client
-        .click(selector)
-    } else {
-      return this.client.pause(1000)
-    }
-  }
-
   pause(timeout) {
     return this.client.pause(timeout)
   }

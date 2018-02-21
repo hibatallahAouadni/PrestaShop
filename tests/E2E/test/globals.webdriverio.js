@@ -34,6 +34,7 @@ global.categoryThumb = path.join(__dirname, '', 'datas', 'category_miniature.png
 global.brandsImage = path.join(__dirname, '', 'datas', 'prestashop.png');
 
 global.onboarding = false;
+global.onBoardingOption = "";
 global.invoiceFileName = "";
 global.basic_price = "";
 global.indexText = 0;
