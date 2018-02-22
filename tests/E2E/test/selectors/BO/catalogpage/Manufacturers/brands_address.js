@@ -11,6 +11,12 @@ module.exports = {
     country: '//*[@id="id_country"]',
     phone_input: '//*[@id="phone"]',
     other_input: '//*[@id="other"]',
-    save_button: '//*[@id="address_form_submit_btn"]'
+    save_button: '//*[@id="address_form_submit_btn"]',
+    search_input_address: '//*[@id="form-address"]//input[@name="addressFilter_city"]',
+    search_button_address: '//*[@id="submitFilterButtonaddress"]',
+    update_brand_address_button: '//*[@id="form-address"]//a[contains(@class, "edit")]',
+    reset_button: '//*[@id="form-address"]//button[@name="submitResetaddress"]',
+    select_option: '//*[@id="form-address"]//td//button',
+    delete_brand_address_button: '//*[@id="form-address"]//a[@class="delete"]'
   }
 };

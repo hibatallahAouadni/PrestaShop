@@ -11,6 +11,15 @@ module.exports = {
     meta_description_input: '//*[@id="meta_description_1"]',
     meta_keywords_input:'//*[@id="fieldset_0"]/div[2]/div[7]/div/div/div[1]/div[1]/div/input',   // '//*[@id="manufacturer_form"]/div/div[2]/div[7]/div/div/input',
     active_button: '//*[@id="manufacturer_form"]/div/div[2]/div[8]/div/span/label[1]',
-    save_button: '//*[@id="manufacturer_form_submit_btn"]'
+    save_button: '//*[@id="manufacturer_form_submit_btn"]',
+    search_input: '//*[@id="form-manufacturer"]//input[@name="manufacturerFilter_name"]',
+    search_button: '//*[@id="submitFilterButtonmanufacturer"]',
+    select_option: '//*[@id="form-manufacturer"]//td//button',
+    update_brand_button: '//*[@id="form-manufacturer"]//td//li[1]/a',
+    reset_button: '//*[@id="form-manufacturer"]//button[@name="submitResetmanufacturer"]',
+    delete_brand_button: '//*[@id="form-manufacturer"]//td//li[3]/a',
+    checkbox_brand: '//*[@id="form-manufacturer"]//input[@type="checkbox"]',
+    bulk_actions_brand: '//*[@id="form-manufacturer"]//div[contains(@class,"bulk-actions")]/button',
+    bulk_actions_delete_brand: '//*[@id="form-manufacturer"]//li[7]/a'
   }
 };

@@ -8,6 +8,19 @@ class Manufacturers extends CommonClient {
             .setValue(selector, "key words")
             .keys('\uE007')
     }
+
+  clickOnAction(groupActionSelector, actionSelector, action = 'edit') {
+    if (action === 'delete') {
+      return this.client
+        .waitForExistAndClick(groupActionSelector)
+        .waitForExistAndClick(actionSelector)
+        .alertAccept()
+    } else {
+      return this.client
+        .waitForExistAndClick(groupActionSelector)
+        .waitForExistAndClick(actionSelector)
+    }
+  }
 }
 
 module.exports = Manufacturers;
