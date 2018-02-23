@@ -23,6 +23,7 @@ module.exports = {
     search_by_reference_input: '//*[@id="form-order"]//table[contains(@class,"order")]//input[@name="orderFilter_reference"]',
     search_order_button: '//*[@id="submitFilterButtonorder"]',
     first_order: '//*[@id="form-order"]//table//tbody//tr[1]//a',
+    transform_guest_customer_button: '//*[@id="content"]//input[@name="submitGuestToCustomer"]',
   },
 
   CreateOrder:{

@@ -1,6 +1,8 @@
 const {productPage} = require('../../../selectors/FO/product_page');
 const {CheckoutOrderPage} = require('../../../selectors/FO/order_page');
 const {accountPage} = require('../../../selectors/FO/add_account_page');
+const {OrderPage} = require('../../../selectors/BO/order');
+const {Menu} = require('../../../selectors/BO/menu.js');
 
 let data = require('./../../../datas/customer_and_address_data');
 let promise = Promise.resolve();
@@ -30,13 +32,15 @@ module.exports = {
       /**** END ****/
       test('should click on proceed to checkout button 2', () => client.waitForExistAndClick(CheckoutOrderPage.proceed_to_checkout_button));
 
-      if (authentication === "create_account") {
+      if (authentication === "create_account" || authentication === "guest") {
         scenario('Create new account', client => {
           test('should choose a "Social title"', () => client.waitForExistAndClick(accountPage.radio_button_gender));
           test('should set the "First name" input', () => client.waitAndSetValue(accountPage.firstname_input, data.customer.firstname));
           test('should set the "Last name" input', () => client.waitAndSetValue(accountPage.lastname_input, data.customer.lastname));
           test('should set the "Email" input', () => client.waitAndSetValue(accountPage.new_email_input, data.customer.email.replace("%ID", date_time)));
-          test('should set the "Password" input', () => client.waitAndSetValue(accountPage.new_password_input, data.customer.password));
+          if(authentication === "create_account") {
+            test('should set the "Password" input', () => client.waitAndSetValue(accountPage.new_password_input, data.customer.password));
+          }
           test('should click on "CONTINUE" button', () => client.waitForExistAndClick(accountPage.new_customer_btn));
         }, 'common_client');
 
@@ -102,5 +106,29 @@ module.exports = {
       test('should set the order status ', () => client.waitAndSelectByValue(OrderPage.order_state_select, '1'));
       test('should click on "Create the order"', () => client.waitForExistAndClick(CreateOrder.create_order_button));
     }, 'order');
+  },
+  checkOrderBO: function (clientType = "client") {
+    scenario('Check the created order in the Back Office', client => {
+      test('should go to "Orders" page', () => client.goToSubtabMenuPage(Menu.Sell.Orders.orders_menu, Menu.Sell.Orders.orders_submenu));
+      test('should search the order created by reference', () => client.waitAndSetValue(OrderPage.search_by_reference_input, global.tab['reference']));
+      test('should go to search order', () => client.waitForExistAndClick(OrderPage.search_order_button));
+      test('should go to the order ', () => client.scrollWaitForExistAndClick(OrderPage.view_order_button.replace('%NUMBER', 1)));
+      test('should check the customer name ', () => client.checkTextValue(OrderPage.customer_name, 'John DOE', 'contain'));
+      if (clientType === "guest") {
+        test('should check the existence of "Transform a guest to customer" button', () => client.waitForExist(OrderPage.transform_guest_customer_button));
+      }
+      test('should status be equal to Awaiting bank wire payment ', () => client.checkTextValue(OrderPage.order_status, 'Awaiting bank wire payment'));
+      test('should check the shipping price', () => client.checkTextValue(OrderPage.shipping_cost, global.tab['shipping_price']));
+      test('should check the product', () => client.checkTextValue(OrderPage.product_name, global.tab['product']));
+      test('should check the order message ', () => client.checkTextValue(OrderPage.message_order, 'Order message test'));
+      test('should check the total price', () => client.checkTextValue(OrderPage.total_price, global.tab["total_price"]));
+      test('should check basic product price', () => {
+        return promise
+          .then(() => client.scrollTo(OrderPage.edit_product_button))
+          .then(() => client.waitForExistAndClick(OrderPage.edit_product_button))
+          .then(() => client.checkAttributeValue(OrderPage.product_basic_price, 'value', global.tab["basic_price"].replace('€', '')))
+      });
+      test('should check shipping method ', () => client.checkTextValue(OrderPage.shipping_method, global.tab["method"].split('\n')[0], 'contain'));
+    }, "order");
   }
 };

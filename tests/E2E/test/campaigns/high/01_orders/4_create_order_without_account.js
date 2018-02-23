@@ -7,7 +7,7 @@ scenario('Create account from checkout in Front Office', () => {
     test('should open the browser', () => client.open());
     test('should access to the Front Office', () => client.accessToFO(AccessPageFO));
   }, 'order');
-  common_scenarios.createOrder("create_account");
+  common_scenarios.createOrder("guest");
 }, 'order', true);
 
 scenario('Check the created order in the Back Office', () => {
@@ -15,5 +15,6 @@ scenario('Check the created order in the Back Office', () => {
     test('should open the browser', () => client.open());
     test('should login successfully in the Back Office', () => client.signInBO(AccessPageBO));
   }, 'order');
-  common_scenarios.checkOrderBO();
+
+  common_scenarios.checkOrderBO("guest");
 }, 'order', true);
