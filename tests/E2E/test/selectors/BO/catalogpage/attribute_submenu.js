@@ -18,7 +18,10 @@ module.exports = {
     group_action_button: '//*[@id="table-attribute_group"]/tbody/tr/td[6]/div/div/button',
     delete_attribute_button: '//*[@id="table-attribute_group"]/tbody/tr/td[6]/div/div/ul/li[3]/a',
     update_button: '//*[@id="table-attribute_group"]/tbody/tr/td[6]/div/div/ul/li[1]/a',
-    update_value_button: '//*[@id="table-attribute"]/tbody/tr[1]/td[5]/div/div/a'
+    update_value_button: '//*[@id="table-attribute"]/tbody/tr[1]/td[5]/div/div/a',
+    attribute_checkbox: '//*[@id="table-attribute_group"]//input[@type="checkbox"]',
+    attribute_bulk_actions: '//*[@id="bulk_action_menu_attribute_group"]',
+    attribute_delete_bulk_action: '//*[@id="form-attribute_group"]//div[contains(@class,"bulk-actions")]//li[4]/a',
   }
 
 };

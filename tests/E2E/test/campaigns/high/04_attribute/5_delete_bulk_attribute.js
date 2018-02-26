@@ -56,8 +56,35 @@ scenario('Check the attribute creation', () => {
     test('should search for the product', () => client.searchByValue(SearchProductPage.search_input, SearchProductPage.search_button, productData.name + date_time));
     test('should go to the product page', () => client.waitForExistAndClick(SearchProductPage.product_result_name));
     test('should check that the product attribute name is "attribute' + date_time + '"', () => client.checkTextValue(SearchProductPage.attribute_name, 'attribute' + date_time));
-    test('should check that the first attribute value is equal to 10', () => client.checkTextValue(SearchProductPage.attribute_value_1, '10'));
-    test('should check that the second attribute value is equal to 20', () => client.checkTextValue(SearchProductPage.attribute_value_2, '20'));
-    test('should check that the third attribute value is equal to 30', () => client.checkTextValue(SearchProductPage.attribute_value_3, '30'));
+  }, 'attribute_and_feature');
+}, 'attribute_and_feature', true);
+
+scenario('Delete "Attribute" with bulk actions', () => {
+  scenario('Login in the Back Office', client => {
+    test('should open the browser', () => client.open());
+    test('should login successfully in the Back Office', () => client.signInBO(AccessPageBO));
+  }, 'attribute_and_feature');
+  scenario('Delete the created "Attribute"', client => {
+    test('Should go to "Attributes & Features" page', () => client.goToSubtabMenuPage(Menu.Sell.Catalog.catalog_menu, Menu.Sell.Catalog.attributes_features_submenu));
+    test('should search for the created attribute', () => client.searchByValue(AttributeSubMenu.search_input, AttributeSubMenu.search_button, 'attribute' + date_time));
+    test('should click on checkbox option', () => client.waitForExistAndClick(AttributeSubMenu.attribute_checkbox));
+    test('should delete the created attribute', () => client.clickOnAction(AttributeSubMenu.attribute_bulk_actions, AttributeSubMenu.attribute_delete_bulk_action, 'delete'));
+    test('should verify the appearance of the green validation', () => client.checkTextValue(CatalogPage.success_panel, '×\nThe selection has been successfully deleted.'));
+  }, 'attribute_and_feature');
+  scenario('Logout from the Back Office', client => {
+    test('should logout successfully from the Back Office', () => client.signOutBO());
+  }, 'attribute_and_feature');
+}, 'attribute_and_feature', true);
+
+scenario('Check the attribute deletion', () => {
+  scenario('Access to the Front Office', client => {
+    test('should open the browser', () => client.open());
+    test('should access to the Front Office', () => client.accessToFO(AccessPageFO));
+  }, 'attribute_and_feature');
+  scenario('Check that the attribute is well deleted in Front Office', client => {
+    test('should set the shop language to "English"', () => client.changeLanguage('english'));
+    test('should search for the product', () => client.searchByValue(SearchProductPage.search_input, SearchProductPage.search_button, 'Att' + date_time));
+    test('should go to the product page', () => client.waitForExistAndClick(SearchProductPage.product_result_name));
+    test('should Check that the attribute has been deleted in the Front Office', () => client.checkDeleted(SearchProductPage.attribute_name));
   }, 'attribute_and_feature');
 }, 'attribute_and_feature', true);
