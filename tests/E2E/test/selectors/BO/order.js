@@ -23,6 +23,10 @@ module.exports = {
     search_by_reference_input: '//*[@id="form-order"]//table[contains(@class,"order")]//input[@name="orderFilter_reference"]',
     search_order_button: '//*[@id="submitFilterButtonorder"]',
     first_order: '//*[@id="form-order"]//table//tbody//tr[1]//a',
+    order_message_select: '//*[@id="order_message_chosen"]/a',
+    created_order_message_li: '//*[@id="order_message_chosen"]//li[text()="%MSG"]',
+    display_to_customer_button: '//*[@id="message"]//span/label[1]',
+    send_message_button: '//*[@id="submitMessage"]',
   },
 
   CreateOrder:{

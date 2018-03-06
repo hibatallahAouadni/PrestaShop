@@ -24,5 +24,11 @@ module.exports = {
     product_discount_details: '//*[@id="main"]//span[contains(@class, "discount")]',
     alert: '//*[@id="notifications"]//article[contains(@class, "alert-danger")]',
     cart_product_discount:'//*[@id="main"]//span[contains(@class,"discount-percentage")] '
+  },
+  OrderHistory: {
+    account_link: '//*[@id="_desktop_user_info"]//a[@class="account"]',
+    order_history_link: '//*[@id="history-link"]',
+    last_order_details_link: '//*[@id="content"]//tr[1]//a[@data-link-action="view-order-details"]',
+    message_block: '//*[@id="content"]/div[@class="box messages"]/div[1]/div[2]'
   }
 };

@@ -283,6 +283,19 @@ class CommonClient {
     }
   }
 
+  clickOnAction(groupActionSelector, actionSelector, action = 'edit') {
+    if (action === 'delete') {
+      return this.client
+        .waitForExistAndClick(groupActionSelector)
+        .waitForExistAndClick(actionSelector)
+        .alertAccept()
+    } else {
+      return this.client
+        .waitForExistAndClick(groupActionSelector)
+        .waitForExistAndClick(actionSelector)
+    }
+  }
+
   pause(timeout) {
     return this.client.pause(timeout)
   }
