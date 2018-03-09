@@ -24,5 +24,16 @@ module.exports = {
     product_discount_details: '//*[@id="main"]//span[contains(@class, "discount")]',
     alert: '//*[@id="notifications"]//article[contains(@class, "alert-danger")]',
     cart_product_discount:'//*[@id="main"]//span[contains(@class,"discount-percentage")] '
+  },
+  OrderHistory: {
+    account_link: '//*[@id="_desktop_user_info"]//a[@class="account"]',
+    order_history_link: '//*[@id="history-link"]',
+    last_order_details_link: '//*[@id="content"]//tr[1]//a[@data-link-action="view-order-details"]',
+    input_checkbox_return: '//*[@id="order-return-form"]//tbody//input[@type="checkbox"]',
+    merchandise_return_textarea: '//*[@id="order-return-form"]/div[@class="box"]//textarea',
+    request_return_button: '//*[@id="order-return-form"]/div[@class="box"]//button',
+    order_reference: '//*[@id="content"]//tbody/tr[1]/td[1]/a',
+    package_status: '//*[@id="content"]//tbody/tr[1]/td[3]',
+    return_reference: '//*[@id="content"]//tbody/tr[1]/td[2]/a',
   }
 };
