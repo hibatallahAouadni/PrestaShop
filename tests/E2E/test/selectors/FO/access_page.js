@@ -10,6 +10,7 @@ module.exports = {
     categories_list: '//*[@id="left-column"]/div[1]/ul/li[2]/ul',
     shopping_cart_button: '//*[@id="_desktop_cart"]/div',
     top_sellers_block:'//h1[contains(text(), "Best Sellers")]',
-    new_products_block:'//h1[contains(text(), "New products")]'
+    new_products_block:'//h1[contains(text(), "New products")]',
+    sitemap_link: '//*[@id="link-static-page-sitemap-2"]',
   }
 };

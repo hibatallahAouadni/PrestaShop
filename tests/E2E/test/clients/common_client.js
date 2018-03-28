@@ -308,6 +308,14 @@ class CommonClient {
       .isVisible(selector)
       .then((isVisible) => expect(isVisible).to.be.false)
   }
+
+  setEditorText(selector, content) {
+    return this.client
+      .click(selector)
+      .execute(function (content) {
+        return (tinyMCE.activeEditor.setContent(content));
+      }, content)
+  }
 }
 
 module.exports = CommonClient;

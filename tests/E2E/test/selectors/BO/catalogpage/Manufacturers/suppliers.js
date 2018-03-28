@@ -2,12 +2,14 @@ module.exports = {
   Suppliers:{
     new_supplier_button: '//*[@id="page-header-desc-supplier-new_supplier"]',
     name_input: '//*[@id="name"]',
+    description_input: '//*[@id="supplier_form"]//div[@class="mce-tinymce mce-container mce-panel"]',
     address_input: '//*[@id="address"]',
     secondary_address: '//*[@id="address2"]',
     postal_code_input: '//*[@id="postcode"]',
     city_input: '//*[@id="city"]',
     country: '//*[@id="id_country"]',
     phone_input: '//*[@id="phone"]',
+    phone_mobile_input: '//*[@id="phone_mobile"]',
     image_input: '//*[@id="logo"]',
     meta_title_input: '//*[@id="meta_title_1"]',
     meta_description_input: '//*[@id="meta_description_1"]',
@@ -23,5 +25,8 @@ module.exports = {
     checkbox_supplier: '//*[@id="table-supplier"]//input[@type="checkbox"]',
     bulk_actions_supplier: '//*[@id="bulk_action_menu_supplier"]',
     bulk_actions_delete_supplier: '//*[@id="form-supplier"]//li[7]/a',
+    number_of_products: '//*[@id="table-supplier"]/tbody//td[5]',
+    suppliers_link: '//*[@id="supplier-page"]',
+    li_supplier: '//*[@id="main"]//li[@class="brand"]',
   }
 };
