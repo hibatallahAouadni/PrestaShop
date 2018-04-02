@@ -28,13 +28,14 @@ scenario('Create "Supplier" in the Back Office', () => {
   }, 'suppliers');
 
   scenario('Check the created "Supplier"', () => {
+    // blocking state
     supplier_scenarios.checkSupplierProduct(0, supplierData);
   }, 'suppliers');
 
   scenario('Logout from the Back Office', client => {
     test('should logout successfully from Back Office', () => client.signOutBO());
   }, 'suppliers');
-}, 'suppliers', true);
+}, 'suppliers');
 
 scenario('Update the created "Supplier"', () => {
   supplier_scenarios.updateSupplier(supplierData);

@@ -43,8 +43,7 @@ module.exports = {
       });
       test('should click on "Sitemap" link', () => client.waitForExistAndClick(AccessPageFO.sitemap_link));
       test('should click on "Suppliers" link', () => client.waitForExistAndClick(Suppliers.suppliers_link));
-      // build a method who search the created supplier to check the number of belonged products
-      test('should check the number of belonged products is equal to 0 in the Front Office', () => client.switchWindow(0));
+      test('should check the number of belonged products is equal to 0 in the Front Office', () => client.checkProducts(Suppliers.li_supplier, Suppliers.p_name_supplier, supplierData, Suppliers.supplier_products));
     }, 'suppliers');
   },
 

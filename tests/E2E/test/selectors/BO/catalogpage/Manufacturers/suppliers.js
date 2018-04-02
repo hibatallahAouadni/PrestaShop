@@ -27,6 +27,8 @@ module.exports = {
     bulk_actions_delete_supplier: '//*[@id="form-supplier"]//li[7]/a',
     number_of_products: '//*[@id="table-supplier"]/tbody//td[5]',
     suppliers_link: '//*[@id="supplier-page"]',
-    li_supplier: '//*[@id="main"]//li[@class="brand"]',
+    li_supplier: '//*[@id="main"]/ul/li',
+    p_name_supplier: '//*[@id="main"]//li[%NUM]/div[@class="brand-infos"]/p[1]',
+    supplier_products: '//*[@id="main"]//li[%NBR]/div[@class="brand-products"]/a[1]',
   }
 };
